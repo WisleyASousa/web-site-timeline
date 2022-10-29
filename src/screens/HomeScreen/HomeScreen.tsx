@@ -1,4 +1,5 @@
 import Box from "@src/components/Box/Box";
+import Link from "@src/components/Link/Link";
 import Text from "@src/components/Text/Text";
 import { useTheme } from "@src/theme/ThemeProvider";
 import Background from "./patterns/Background/Background";
@@ -21,6 +22,14 @@ export default function HomeScreen() {
         alignItems: 'center',
       }}
     >
+            {/* link interno */}
+      <Link colorVariant="accent" href="/sobre">
+        Saber mais
+      </Link>
+            {/* link externo */}
+      <Link href="https://google.com">
+        Ir para o Google
+      </Link>
       <Background />
       <Menu />
       <Feed>
