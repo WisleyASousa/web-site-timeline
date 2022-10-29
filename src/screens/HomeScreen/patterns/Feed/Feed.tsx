@@ -1,5 +1,6 @@
 import Box from "@src/components/Box/Box";
 import Button from "@src/components/Button/Button";
+import ButtonBase from "@src/components/Button/ButtonBase";
 import Icon from "@src/components/Icon/Icon";
 import Image from "@src/components/image/image";
 import Link from "@src/components/Link/Link";
@@ -25,6 +26,9 @@ export default function Feed({ children }){
 Feed.Header = () => {
   return (
     <Box>
+      <Button>
+        Olá Pessoas!
+      </Button>
       <Button.Base
         href="https://github.com/WisleyASousa">
         <Image

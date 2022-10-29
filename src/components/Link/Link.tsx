@@ -10,6 +10,7 @@ interface LinkProps {
   children: React.ReactNode;
   styleSheet?: StyleSheet;
   variant?: ThemeTypographyVariants;
+          // [FullWidth]
   colorVariant?: 'primary' | 'accent' | 'neutral' | 'success' | 'warning' | 'negative';
   colorVariantEnable?: boolean;
 }
