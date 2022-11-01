@@ -12,6 +12,10 @@ export default function Background() {
           backgroundImage:`url("${imageUrl}")`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
+          borderRadius: "0 0 25px 25px",
+          
+
+
         }}
       />
     )

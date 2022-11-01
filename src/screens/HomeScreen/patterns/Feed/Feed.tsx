@@ -23,9 +23,16 @@ export default function Feed({ children }){
           backgroundColor: theme.colors.neutral.x000,
           marginTop: '-228px',
           maxWidth: '683px',
-          borderRadius: "8px",
+          borderRadius: "25px",
           paddingVertical:'40px',
           paddingHorizontal: '32px',
+          boxShadow: 'inset -20px -20px 10em rgba(0, 0, 0, 0.3)',
+          
+          position: 'relative',
+			    top: '-3px',
+			    left: '-3px',
+          border: '#FFB088 solid 1px',
+          
 
         }}
       >
@@ -46,46 +53,87 @@ Feed.Header = () => {
     >
       <Box
         styleSheet={{
-          flexDirection: 'row',
+          flexDirection: { xs:'column', md:'row'},
+
           justifyContent: 'space-between',
           gap: '16px',
           marginBottom: '16px',
         }}
       >
-        <Image
-          styleSheet={{
-            width: "128px",
-            height: "128px",
-            borderRadius: "100%",
-            border: "2px solid black"
-            
-          }} 
-          src="https://github.com/wisleyasousa.png"
-          alt="Imagem de Perfil do Wisley A. Sousa"
-        />
         <Box
-          
           styleSheet={{
-            justifyContent: 'space-between',
-            
+            flexDirection: 'column',
+            alignItems: 'center',
             
           }}
         >
-          <Button fullWidth colorVariant="primary" size='xl' href="/">
-            Newsletter
-          </Button>
-          <Button fullWidth colorVariant="neutral" size='xl' href="/">
-            Buy me a Coffee 🤍
-          </Button>
+          <Button.Base
+            href="https://github.com/WisleyASousa"
+            styleSheet={{
+              borderRadius: "100%",
+
+              hover: {
+                boxShadow: '0 0 0.5em #F35627',
+                transform: 'scale(1.1)',
+                
+
+              },
+            }}
+            >
+            <Image
+              styleSheet={{
+                width: { xs: '100px', md: '128px'},
+                height: { xs: '100px', md: '128px'},
+                borderRadius: "100%",
+              
+                
+                
+              }} 
+              src="https://github.com/wisleyasousa.png"
+              alt="Imagem de Perfil do Wisley A. Sousa"
+              />
+          </Button.Base>
+            <Text tag="h1" variant="heading4">
+                Wisley A. Sousa
+            </Text>
+          </Box>
+        <Box     
+          styleSheet={{
+            justifyContent: 'space-evenly',
+            gap: '16px',
+          }}
+        >
+            <Button 
+              fullWidth 
+              colorVariant="primary" 
+              size='xl' 
+              href="/" 
+              styleSheet={{
+                hover: {
+                  boxShadow: '0 0 0.5em #F35627',
+                },
+              }}
+              >
+              Newsletter
+            </Button>
+            <Button 
+              fullWidth 
+              colorVariant="neutral" 
+              size='xl' 
+              href="/" 
+              styleSheet={{
+                hover: {
+                  boxShadow: '0 0 0.5em #F35627',
+                },
+                }}>
+              Buy me a Coffee 🤍
+            </Button>
         </Box>
       </Box>
-      <Button.Base
-        href="https://github.com/WisleyASousa">
         
-        <Text tag="h1" variant="heading4">
-          Wisley A. Sousa
-        </Text>
-      </Button.Base>
+{/* 
+      hover: {
+                boxShadow: '0 0 0.5em #F35627', */}
       {/* <Link colorVariant="accent" href="https://youtube.com">
         <Icon name="youtube" />
       </Link>

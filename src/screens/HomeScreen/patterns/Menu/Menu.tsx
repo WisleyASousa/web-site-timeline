@@ -35,6 +35,8 @@ export default function Menu() {
             boxShadow: '0 0 0.2em #F35627',
             hover: {
               backgroundColor: theme.colors.primary.x400,
+              boxShadow: '0 0 2em #F35627',
+              
             },
             focus: {
               backgroundColor: theme.colors.primary.x600,
@@ -58,6 +60,8 @@ export default function Menu() {
             boxShadow: '0 0 0.2em #F35627',
             hover: {
               backgroundColor: theme.colors.primary.x400,
+              boxShadow: '0 0 2em #F35627',
+
             },
             focus: {
               backgroundColor: theme.colors.primary.x600,

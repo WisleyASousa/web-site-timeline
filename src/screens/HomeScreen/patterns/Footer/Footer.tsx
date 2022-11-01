@@ -18,6 +18,10 @@ export default function Footer() {
           justifyContent: 'center',
           boxShadow: 'inset -7px -7px 40px rgba(0, 0, 0, 1)',
           textAlign: 'center',
+          position: 'fixed',
+          bottom: '0',
+          borderRadius: "25px 25px 0 0",
+
 
         }}
       >
@@ -26,6 +30,10 @@ export default function Footer() {
             flexDirection: 'row',
             alignItems: 'center',
             gap: '1rem',
+            justifyContent: 'center',
+            textAlign: 'center',
+
+
 
           }}
         >
