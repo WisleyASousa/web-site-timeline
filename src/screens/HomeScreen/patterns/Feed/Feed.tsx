@@ -93,7 +93,7 @@ Feed.Header = () => {
               alt="Imagem de Perfil do Wisley A. Sousa"
               />
           </Button.Base>
-            <Text tag="h1" variant="heading4">
+            <Text tag="h1" variant="heading3">
                 Wisley A. Sousa
             </Text>
           </Box>
